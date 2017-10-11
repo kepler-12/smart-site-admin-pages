@@ -1,0 +1,34 @@
+{
+  "name": "smart-site-content",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "dotenv": "^4.0.0",
+    "sequelize": "^4.13.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^3.0.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kepler-12/smart-site-content.git"
+  },
+  "author": "",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/kepler-12/smart-site-content/issues"
+  },
+  "homepage": "https://github.com/kepler-12/smart-site-content#readme"
+}
