@@ -10,6 +10,10 @@ module.exports = [{
       type: 'INTEGER'
     },
     {
+      name: 'SomethingNew',
+      type: 'JSON'
+    },
+    {
       name: 'name',
       type: 'STRING'
     },

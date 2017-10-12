@@ -1,11 +1,15 @@
-const fs = require('fs')
-const path = require('path')
-const basename = path.basename(__filename)
-const contentTypes = require('./lib/contentTypes')
+require('dotenv').config()
+const Sequelize = require('sequelize')
+const configLoop = require('../lib/configLoop')
 
-module.export = (db, sequelize) => {
-  contentTypes.forEach(file => {
-    var model = sequelize['import'](path.join(__dirname, file))
-    db[model.name] = model
+module.exports = (db, sequelize) => {
+  configLoop(data => {
+    data.properties = data.properties.map(property => {
+      property.type = Sequelize[property.type]
+      return property
+    })
+    db[data.name] = sequelize.define(data.name.toLowerCase, data.properties)
   })
+  console.log(db)
 }
+
