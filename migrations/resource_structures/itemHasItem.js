@@ -12,14 +12,14 @@ module.exports = {
       itemId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'item',
+          model: 'items',
           key: 'id'
         }
       },
       hasItemId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'item',
+          model: 'items',
           key: 'id'
         }
       },
@@ -32,9 +32,6 @@ module.exports = {
         type: Sequelize.DATE
       }
     })
-      .then(result => {
-
-      })
   },
 
   down: (queryInterface, Sequelize) => {

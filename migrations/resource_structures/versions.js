@@ -2,7 +2,7 @@
 'use strict'
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('groups', {
+    return queryInterface.createTable('versions', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -12,7 +12,7 @@ module.exports = {
       templateId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'template',
+          model: 'templates',
           key: 'id'
         }
       },
@@ -40,13 +40,10 @@ module.exports = {
         type: Sequelize.DATE
       }
     })
-      .then(result => {
-
-      })
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('resources')
+    return queryInterface.dropTable('versions')
   }
 
 }

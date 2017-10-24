@@ -22,9 +22,6 @@ module.exports = {
         type: Sequelize.DATE
       }
     })
-    .then(result => {
-
-    })
   },
 
   down: (queryInterface, Sequelize) => {
