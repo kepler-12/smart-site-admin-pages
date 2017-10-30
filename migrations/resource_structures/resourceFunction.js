@@ -18,8 +18,9 @@ module.exports = {
           updatedAt timestamptz
         )', NEW.name);
         
+        
         EXECUTE format('CREATE FUNCTION %I () returns setof %I as $$
-        SELECT items.id, items."resourceId", items.name, items."createdAt", items."updatedAt" FROM items, resources WHERE resources.name = %L
+        SELECT items.id, items."resourceId", items.name, items."createdAt", items."updatedAt" FROM items, resources WHERE resources.name = %L AND resources.id = items."resourceId"
         $$ LANGUAGE SQL stable;', NEW.name, NEW.name, NEW.name);
 
         EXECUTE format('CREATE OR REPLACE FUNCTION %I_resource (item %I) returns setof resources as $$

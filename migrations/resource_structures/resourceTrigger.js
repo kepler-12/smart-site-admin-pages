@@ -14,6 +14,6 @@ module.exports = {
 
 /*
 
-CREATE TRIGGER register_resource BEFORE INSERT OR UPDATE ON resources
-        FOR EACH ROW EXECUTE PROCEDURE register_resource();
+CREATE TRIGGER drop_resource BEFORE UPDATE ON resources
+        FOR EACH ROW EXECUTE PROCEDURE drop_resource();
 */

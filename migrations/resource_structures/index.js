@@ -1,8 +1,10 @@
-// The migrations to be run in order synch 
+// The migrations to be run sync
 const migrations = [
   require('./resources'),
   require('./resourceFunction'),
+  require('./resourceDropFunction'),
   require('./resourceTrigger'),
+  require('./resourceDropTrigger'),
   require('./resourceHasResource'),
   require('./groups'),
   require('./templates'),

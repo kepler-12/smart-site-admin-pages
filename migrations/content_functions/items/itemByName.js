@@ -16,7 +16,7 @@ module.exports = sequelize => {
           name text,
           createdAt timestamptz,
           updatedAt timestamptz
-      );`)
+      )`)
 
       // We set the entry point for this resource to a list of items
       await query(`CREATE OR REPLACE FUNCTION ${resource.name} () returns setof ${resource.name} as $$
@@ -28,7 +28,7 @@ module.exports = sequelize => {
         SELECT * from resources where name = '${resource.name}'
         $$language sql stable;`)
       await query(`INSERT INTO resources (name, "createdAt", "updatedAt") VALUES ('${resource.name}', 'now', 'now')`)
-      
+
       return ({error: false})
     } else {
       return ({error: 'Resource already exists'})
