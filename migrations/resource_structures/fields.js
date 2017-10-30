@@ -16,26 +16,21 @@ module.exports = {
           key: 'id'
         }
       },
-      version: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'itemVersions',
-          key: 'id'
-        }
-      },
       name: {
         type: Sequelize.STRING
       },
-      value: {
+      type: {
         type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP(3)')
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP(3)')
       }
     })
   },

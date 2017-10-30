@@ -35,7 +35,9 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('resourceHasResource')
+    return queryInterface.dropTable('resourceHasResource', {
+      cascade: true
+    })
   }
 
 }

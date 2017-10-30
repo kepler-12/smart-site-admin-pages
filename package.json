@@ -1,13 +1,37 @@
 {
-  "name": "smart-site-content",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "_from": "github:kepler-12/smart-site-content#master",
+  "_id": "smart-site-content@0.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-kAeF8aSLE5c0woXo8+qScoNU2Pc=",
+  "_location": "/smart-site-content",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:kepler-12/smart-site-content#master",
+    "rawSpec": "github:kepler-12/smart-site-content#master",
+    "saveSpec": "github:kepler-12/smart-site-content#master",
+    "fetchSpec": null,
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:kepler-12/smart-site-content#6f4c1d196f51436533998b5346805df4724fd2ad",
+  "_spec": "github:kepler-12/smart-site-content#master",
+  "_where": "/Build/smart-site/node_modules",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/kepler-12/smart-site-content/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "chalk": "^2.1.0",
     "dotenv": "^4.0.0",
     "sequelize": "^4.13.8"
   },
+  "deprecated": false,
+  "description": "",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
@@ -16,19 +40,19 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-html": "^3.0.0",
     "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1"
+    "eslint-plugin-standard": "^2.0.1",
+    "pg": "^7.3.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/kepler-12/smart-site-content#readme",
+  "license": "UNLICENCED",
+  "main": "index.js",
+  "name": "smart-site-content",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/kepler-12/smart-site-content.git"
   },
-  "author": "",
-  "license": "UNLICENCED",
-  "bugs": {
-    "url": "https://github.com/kepler-12/smart-site-content/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/kepler-12/smart-site-content#readme"
+  "version": "0.0.0"
 }

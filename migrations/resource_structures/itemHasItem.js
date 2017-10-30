@@ -35,7 +35,9 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('itemHasItem')
+    return queryInterface.dropTable('itemHasItem', {
+      cascade: true
+    })
   }
 
 }
