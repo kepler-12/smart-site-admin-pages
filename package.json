@@ -29,7 +29,7 @@
   "homepage": "https://github.com/kepler-12/smart-site-content#readme",
   "license": "UNLICENCED",
   "main": "index.js",
-  "name": "smart-site-content",
+  "name": "smart-site-admin-pages",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/kepler-12/smart-site-content.git"
