@@ -18,7 +18,8 @@ module.exports = async function (Vue) {
         }
       }`
   })
-  return adminPages.data.adminPages.nodes.items.nodes.map(page => {
+  console.log(adminPages)
+  return adminPages.data.adminPages.nodes[0].items.nodes.map(page => {
     return {
       path: page.path,
       name: page.name,
