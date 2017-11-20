@@ -31,7 +31,7 @@ module.exports = async function (client) {
     `
   })
   console.log(resource)
-  const attachItems = await client.mutation({
+  await client.mutate({
     mustation: gql`
       mutation {
           path: createField(input:{
@@ -56,5 +56,5 @@ module.exports = async function (client) {
         }
       }`
   })
-  return attach = await attachToResource(resource.data.id)
+  return await attachToResource(resource.data.id)
 }

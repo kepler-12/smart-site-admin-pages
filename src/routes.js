@@ -7,14 +7,18 @@ module.exports = async function (Vue) {
       {
         adminPages{
           nodes{
-            path
-            name
-            template
+            items{
+              nodes{
+                name
+                path
+                template
+              }
+            }
           }
         }
       }`
   })
-  return adminPages.data.adminPages.nodes.map(page => {
+  return adminPages.data.adminPages.nodes.items.nodes.map(page => {
     return {
       path: page.path,
       name: page.name,
