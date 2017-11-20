@@ -30,13 +30,14 @@ module.exports = async function (client) {
       }
     `
   })
-  console.log(resource)
-  await client.mutate({
-    mustation: gql`
+  console.log('resource', resource)
+
+  const mutate = await client.mutate({
+    mutation: gql`
       mutation {
           path: createField(input:{
           field:{
-            resourceId: ${resource.data.id}
+            resourceId: ${resource.data.resourceByName.id}
             fieldSet: "items"
             name:"path"
             type:"text"
@@ -46,7 +47,7 @@ module.exports = async function (client) {
         }
         template: createField(input:{
           field:{
-            resourceId: ${resource.data.id}
+            resourceId: ${resource.data.resourceByName.id}
             fieldSet: "items"
             name:"template"
             type:"text"
@@ -56,5 +57,7 @@ module.exports = async function (client) {
         }
       }`
   })
-  return await attachToResource(resource.data.id)
+  const tempAttach = await attachToResource(client)(resource.data.resourceByName.id)
+  console.log(tempAttach)
+  return tempAttach
 }
