@@ -2,7 +2,7 @@ const gql = require('graphql-tag')
 
 module.exports = async function (Vue) {
   const apolloClient = Vue.prototype.$apolloClient
-  const adminPages = apolloClient.query({
+  const adminPages = await apolloClient.query({
     query: gql`
       {
         adminPages{
