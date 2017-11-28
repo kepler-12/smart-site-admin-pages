@@ -1,11 +1,22 @@
 const gql = require('graphql-tag')
 
-module.exports = async (Vue) => {
+module.exports = async function (Vue) {
   const apolloClient = Vue.prototype.$apolloClient
   const adminPages = await apolloClient.query({
     query: gql`
       {
-        adminPages{
+        adminPages {
+          nodes {
+            items {
+              nodes {
+                name
+                path
+                template
+              }
+            }
+          }
+        }
+        page{
           nodes{
             items{
               nodes{
@@ -16,14 +27,22 @@ module.exports = async (Vue) => {
             }
           }
         }
-      }`
+      }
+      `
   })
-  console.log(adminPages)
-  return adminPages.data.adminPages.nodes[0].items.nodes.map(page => {
+  const adminPagesList = adminPages.data.adminPages.nodes[0].items.nodes.map(page => {
     return {
       path: page.path,
       name: page.name,
       component: Vue.component(page.template)
     }
   })
+  const pageList = adminPages.data.page.nodes[0].items.nodes.map(page => {
+    return {
+      path: page.path,
+      name: page.name,
+      component: Vue.component('defaultPage')
+    }
+  })
+  return [...adminPagesList, ...pageList]
 }
