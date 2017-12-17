@@ -1,5 +1,28 @@
 {
-  "author": "Tyler R Smith@Kepler12",
+  "_from": "github:kepler-12/smart-site-admin-pages#master",
+  "_id": "smart-site-admin-pages@0.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-tCWNEUqzkkvvPffslif2+IS/psE=",
+  "_location": "/smart-site-admin-pages",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:kepler-12/smart-site-admin-pages#master",
+    "rawSpec": "github:kepler-12/smart-site-admin-pages#master",
+    "saveSpec": "github:kepler-12/smart-site-admin-pages#master",
+    "fetchSpec": null,
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:kepler-12/smart-site-admin-pages#47482425509169405a9ea825f48569edb761f133",
+  "_spec": "github:kepler-12/smart-site-admin-pages#master",
+  "_where": "/Build/smart-site",
+  "author": {
+    "name": "Tyler R Smith@Kepler12"
+  },
   "bugs": {
     "url": "https://github.com/kepler-12/smart-site-admin/issues"
   },
