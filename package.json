@@ -34,7 +34,7 @@
     "chalk": "^2.1.0",
     "dotenv": "^4.0.0",
     "sequelize": "^4.13.8",
-    "smart-site-templates": "github:kepler-12/smart-site-templates#master"
+    "smart-site-templates": "https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-templates.git"
   },
   "deprecated": false,
   "description": "",
