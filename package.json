@@ -1,24 +1,25 @@
 {
-  "_from": "github:kepler-12/smart-site-admin-pages#master",
+  "_from": "git+https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-admin-pages.git",
   "_id": "smart-site-admin-pages@0.0.0",
   "_inBundle": false,
-  "_integrity": "sha1-tCWNEUqzkkvvPffslif2+IS/psE=",
+  "_integrity": "sha1-JSD5LD0fLszig2fA5HVhJNBRQgw=",
   "_location": "/smart-site-admin-pages",
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "github:kepler-12/smart-site-admin-pages#master",
-    "rawSpec": "github:kepler-12/smart-site-admin-pages#master",
-    "saveSpec": "github:kepler-12/smart-site-admin-pages#master",
-    "fetchSpec": null,
+    "raw": "smart-site-admin-pages@git+https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-admin-pages.git",
+    "name": "smart-site-admin-pages",
+    "escapedName": "smart-site-admin-pages",
+    "rawSpec": "git+https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-admin-pages.git",
+    "saveSpec": "git+https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-admin-pages.git",
+    "fetchSpec": "https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-admin-pages.git",
     "gitCommittish": "master"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "github:kepler-12/smart-site-admin-pages#47482425509169405a9ea825f48569edb761f133",
-  "_spec": "github:kepler-12/smart-site-admin-pages#master",
+  "_resolved": "git+https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-admin-pages.git#5713cf86592fd8621bffc2bf8e2b62444fc00b8c",
+  "_spec": "smart-site-admin-pages@git+https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-admin-pages.git",
   "_where": "/Build/smart-site",
   "author": {
     "name": "Tyler R Smith@Kepler12"
@@ -34,7 +35,7 @@
     "chalk": "^2.1.0",
     "dotenv": "^4.0.0",
     "sequelize": "^4.13.8",
-    "smart-site-templates": "github:kepler-12/smart-site-templates#master"
+    "smart-site-templates": "git+https://6bb832cd9260456af396c01a2328277c0c2be5c0@github.com/kepler-12/smart-site-templates.git"
   },
   "deprecated": false,
   "description": "",
