@@ -3,7 +3,7 @@ const gql = require('graphql-tag')
 module.exports = async function (Vue, apolloClient) {
 let pageList = []
   try {
-    apolloClient.query({
+    const adminPages = await apolloClient.query({
       query: gql`
         {
           page{
